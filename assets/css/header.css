@@ -1,0 +1,100 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cabecalho {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+}
+.cabecalho::before {
+    content: '';
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2560px;
+    height: 1964px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.title  {
+    text-align: center;
+}
+
+.photo {
+    margin-top: 1rem;
+    width: 310px;
+    height: 330px;
+    border-radius: 50%;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.information p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1.125rem;
+    
+}
+
+.information .position::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url('/assets/images/position.svg');
+    background-image: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+.information .local::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url('/assets/images/local.svg');
+    background-image: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+.information .number::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url('/assets/images/number.svg');
+    background-image: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+.information .email::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url('/assets/images/email.svg');
+    background-image: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
