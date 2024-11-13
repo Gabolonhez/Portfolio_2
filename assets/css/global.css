@@ -2,3 +2,43 @@
     box-sizing: border-box;
     font-family: 'Open Sans', 'sans-serif';
 }
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.main {
+    margin: 1rem;
+    padding: 1rem;
+
+}
+
+.main::before, .main::after {
+    content: '';
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2560px;
+    height: 1964px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.main::after {
+    content: '';
+    top: auto;
+    left: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        max-width: 1024px;
+        margin: 1rem auto;
+    }
+    .cabecalho::before, .cabecalho::after  {
+        width: 70vw;
+    }
+
+}
