@@ -1,37 +1,36 @@
-body {
-    background-color: #000;
-    color: #fff;
-}
+
 
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
-.cabecalho {
+.header::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assets/images/points.svg');
+}
+
+.header {
     padding: 1rem;
     margin: 1rem;
     border: 1px solid #fff;
     border-radius: 1rem;
 }
-.cabecalho::before {
-    content: '';
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 2560px;
-    height: 1964px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
+
 .title  {
     text-align: center;
 }
 
-.photo {
+.header .photo {
     margin-top: 1rem;
     width: 310px;
     height: 330px;
@@ -98,3 +97,26 @@ body {
     margin-right: .5rem;
 }
 
+
+@media screen and (min-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-areas: 
+        "photo title"
+        "photo information"
+        ;
+    }
+    .header .photo {
+        grid-area: photo;
+        margin: 0 auto;
+    }
+    .header .title {
+        grid-area: title;
+        text-align: start;
+        max-width: 200px;
+    }
+    .header .information {
+        grid-area: information;
+    }
+
+}
