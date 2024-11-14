@@ -19,9 +19,6 @@
     background-image: url('/assets/images/points.svg');
 }
 
-.header {
-  
-}
 
 .title  {
     text-align: center;
@@ -29,8 +26,8 @@
 
 .header .photo {
     margin-top: 1rem;
-    width: 310px;
-    height: 330px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
 }
 

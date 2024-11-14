@@ -1,7 +1,13 @@
 .skills {
     display: flex;
     flex-direction: column;
+    
 }
+
+.skills li h3 {
+    text-align: start;
+}
+
 
 .skills .tecnica ul {
     display: flex;
