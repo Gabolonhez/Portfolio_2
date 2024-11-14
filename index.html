@@ -9,37 +9,60 @@
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/acordeon.css">
+    <link rel="stylesheet" href="assets/css/languages.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
 </head>
 <body>
-    <div class="main">
+    <main>
     <header class="header">
             <img class="photo" src="./assets/images/Me 1.jpg" alt="Minha foto">
             <h1 class="title"> Gabriel Bolonhez</h1>
         <div class="information">
             <p class="position">Estágiario de TI</p>
             <p class="local">São Paulo - BR</p>
-            <p class="number">+55 (11) 94367-8485</p>
-            <p class="email">gbbolonhez@gmail.com</p>
+            <p class="number">
+                <a href="tel:+55 (11) 94367-8485"> +55 (11) 94367-8485</a>
+            </p>
+            <p class="email">
+            <a href="mailto:gbbolonhez@gmail.com">gbbolonhez@gmail.com</a> 
+            </p>
         </div>
+    </header>
         <section class="acordeon">
-            <div class="idiomas">
-            <button class="trigger">
+            <button class="trigger" type="button">
                 <span class="title">
                     Idiomas
                 </span>
             </button>
                 <div class="content">
-                <ul>
+                <ul class="languages">
                     <li>Português</li>
                     <li>Inglês</li>
                     <li>Espanhol</li>
                 </ul>
             </div>
-            </div>
         </section>
-    </header>
-    </div>
-    <main></main>
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <span class="title">
+                    Portfólio
+                </span>
+            </button>
+                <div class="content">
+                    <ul class="portfolio">
+                        <li>
+                            <span class="title github">Exemplo 1</span>
+                            <a href="#" target="_blank">Link</a>
+                        </li>
+                        <li>
+                            <span class="title github">Exemplo 2</span>
+                            <a href="#" target="_blank">Link</a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+        </section>
+    </main>
 
     <footer></footer>
 </body>
