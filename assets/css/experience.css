@@ -10,10 +10,6 @@
     gap: .5rem;
 }
 
-.experience li h2 {
-    text-align: start;
-}
-
 .experience li .period {
     display: flex;
     flex-direction: row;
