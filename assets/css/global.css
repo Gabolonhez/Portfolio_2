@@ -20,8 +20,6 @@ a:hover {
 main {
     margin: 1rem;
     padding: 1rem;
-    padding: 1rem;
-    margin: 1rem;
     border: 1px solid #fff;
     border-radius: 1rem;
 }
@@ -32,8 +30,8 @@ main::before, main::after {
     background: radial-gradient(circle, rgba(8,6,37,1) 0%, rgba(43,43,92,1) 35%, rgba(3,10,11,1) 100%);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 2560px;
-    height: 1964px;
+    width: 140vw;
+    height: 100vh;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -44,6 +42,9 @@ main::after {
     content: '';
     top: auto;
     left: auto;
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
 }
 
 @media screen and (min-width: 768px) {
@@ -51,8 +52,6 @@ main::after {
         max-width: 1024px;
         margin: 1rem auto;
     }
-    .cabecalho::before, .cabecalho::after  {
-        width: 70vw;
-    }
+
 
 }
